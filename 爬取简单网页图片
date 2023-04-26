@@ -1,0 +1,8 @@
+import requests
+path = 'D://tl.jpg'
+src = 'https://www.theghanareport.com/wp-content/uploads/2021/11/taylor-swift-2019-m7.jpg'
+r = requests.get(src)
+with open(path, 'wb') as f:
+    f.write(r.content)
+    f.close()
+print('下载完成')
