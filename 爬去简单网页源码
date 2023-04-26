@@ -1,0 +1,4 @@
+import requests #调用requests库
+url = ‘https://www.baidu.com’ #定义变量
+r = requests.get(url) #get方法获取源码
+print(r.text) #text属性
