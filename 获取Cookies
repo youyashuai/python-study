@@ -1,0 +1,9 @@
+#通过响应对象调用cookies属性即可获得Cookies，它是一个RequestCookiesJar类型的对象，然后用items( )方法将其转换为元组组成 的列表，遍历输出每一个Cookies的名称和值
+import requests
+r = requests.get('https://www.baidu.com')
+#打印Cookies对象
+print(r.cookies)
+#遍历Cookies
+for key,value in r.cookies.items():
+	print(key+'='+value)
+  
