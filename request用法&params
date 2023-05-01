@@ -1,0 +1,17 @@
+import requests
+r = requests.get('https://httpbin.org/get?name=germey&age=25')
+print(r.text)
+
+import requests
+data = {
+     'name': 'germey',
+     'age': 25
+}
+r = requsts.get('https://httpbin.org/get', params=data)
+print(r.text)
+
+
+import requests
+url = 'https://httpbin.org/get'
+r = requests.get(url, params = {'name': 'germey', 'age': 25})
+print(r.text)
